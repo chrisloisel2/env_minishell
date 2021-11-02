@@ -24,7 +24,7 @@ SRCS =  	src/main_env.c\
 			src/built_in/ft_built_in_export.c\
 			src/built_in/ft_built_in_unset.c\
 			src/built_in/ft_built_in_pwd.c\
-			src/built_in/ft_built_in_echo.cÒ
+			src/built_in/ft_built_in_echo.c
 	
 SRCS_BONUS =
 
@@ -38,7 +38,7 @@ OBJS_B = *.o
 .c.o:
 	${CC} ${FLAGS} -c $< -o ${<:.c=.o} -I includes/ -I libft/includes/
 
-all : header
+all :
 	@make -C $(LIBFT)
 	@make $(NAME)
 

@@ -21,4 +21,5 @@ int    ft_built_in_pwd(void)
         return (50);
     printf("%s\n", str);
     free(str);
+    return (0);
 }
