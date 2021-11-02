@@ -1,0 +1,32 @@
+/* ceci est un fichier avec toute les lignes des tests a executer sur chaque version de minishell */
+
+
+expend : 
+
+-- unquote
+	-env
+
+	-env qui existe pas
+
+	-env_multi word
+
+	- "env -i ./minishell"
+	
+	- < sans file
+		: <     |ls
+
+		: mot <|
+		: test bonjour < 
+
+	- < file
+
+	- > sans file
+
+	- > avec file
+
+	- << sans here_doc
+
+	- << avec Here_doc
+		: cat << ""
+
+
